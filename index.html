@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Groceries</title>
+    <link rel="stylesheet" href="./css/index.css">
+
+    <script>
+        function validateForm(){
+            var name = document.forms["contact-form"]["name"].value;
+            var email = document.forms["contact-form"]["email"].value;
+            var phone = document.forms["contact-form"]["phone"].value;
+            var sayur = document.forms["contact-form"]["sayur"].value;
+            var message = document.forms["contact-form"]["message"].value;
+
+            if (name == "" || email == "" || phone == "" || sayur == "" || message == "") {
+                alert("Tidak boleh ada yang kosong!");
+                return false;
+            }
+        }
+    </script>
+
+</head>
+
+
+<body>
+    <header class="header">
+        <img class="logo" src="/asset/logo-moqups.png">
+        <div class="nav">
+            <button><a href="#Home">Home</a></button>
+            <button><a href="#Our-Packages">Our Packages</a></button>
+            <button><a href="#Call-Us">Call Us</a></button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="home">
+            <div class="banner">
+                <h1>Top Rated E-Groceries Shop In <br>Indonesia</h1>
+                <p>Every Day with the best ingredients</p>
+            </div>
+        </section>
+
+        <section class="main-form">
+            <div class="element left">
+                <img src="https://cdn.britannica.com/17/196817-050-6A15DAC3/vegetables.jpg" alt="vegetables img" width="600" height="400" class="image">
+                
+                <img src="https://img.freepik.com/free-photo/healthy-vegetables-wooden-table_1150-38014.jpg?w=360" alt="vegetables img" width="600" height="400" class="image">
+                
+                <img src="https://assets-global.website-files.com/5d2fb52b76aabef62647ed9a/6195c8e178a99295d45307cb_allgreen1000-550.jpg" alt="vegetables img" width="600" height="400" class="image">
+
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                  </div>
+                
+                
+                <div class="review">
+                    <p><i>"setiap hari beli sayur buah yang fresh disini"</i></p>
+                </div>
+
+                <div class="konten">
+                    <div class="circle">
+                        <img src="asset/user-regular.svg" width="20" height="18">
+                    </div>
+
+                    <div class="isi-konten">
+                        <p><b>Florence Hughes</b></p>
+                        <p><i>Ibu Rumah Tangga,28</i></p>
+                    </div>
+                </div>
+              <hr>
+
+              <div class="text">
+                <p><b>use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefit of your service or product</b></p>
+              </div>
+              
+              <div class="elementeks">
+                <div class="lingkaran">
+                    <b>1</b>
+                </div>
+
+                <div class="isi">
+                    Your first feature,written in the form of a <br> benefit statement
+                </div>
+              </div>
+                
+              <div class="elementeks">
+                <div class="lingkaran">
+                    <b>2</b>
+                </div>
+
+                <div class="isi">
+                    Your second feature,written in the form <br> of a benefit statement
+                </div>
+              </div>
+
+              <div class="elementeks">
+                <div class="lingkaran">
+                    <b>3</b>
+                </div>
+
+                <div class="isi">
+                    Your third feature,written in the form of <br> a benefit statement
+                </div>
+              </div>
+            </div>
+
+
+            <div class="element right">
+                <div class="form">
+                    <h3>Contact Us</h3>
+                    <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+
+                    <form name="contact-form" onsubmit="return validateForm()" method="post">
+
+                        <div class="input-field">
+                            <label><b>Your Name:</b></label>
+                            <input id="name" name="name" class="input" placeholder="First and last name">    
+                        </div>
+                        
+                        <div class="input-field">
+                            <label><b>Email Address:</b></label>
+                            <input id="email" name="email" class="input" placeholder="Example@gmail.com">
+                        </div>
+
+                        <div class="input-field">
+                            <label><b>Phone Number:</b></label>
+                            <input id="phone" name="phone" class="input" placeholder="08123456789">
+                        </div>
+                        
+                        <div class="input-field">
+                            <label><b>What are you interest in?</b></label>
+                            <select id="sayur" name="sayur" aria-label="Select Option">
+                            <option selected disabled>Select Option</option>
+                            <option value="bayam">Bayam</option>
+                            <option value="wortel">Wortel</option>
+                            <option value="tomat">Tomat</option>
+                            <option value="brokoli">Brokoli</option>
+                            <option value="selada">semangka</option>
+                            <option value="kangkung">apel</option>
+                            <option value="timun">timun</option>
+                          </select>
+                        </div>
+    
+                        <div class="input-field">
+                            <label><b>Message</b></label>
+                            <textarea class="form-control" id="message" rows="3" name="message" placeholder="write your message here..."></textarea>
+                        </div>
+                        <button class="btn" type="submit"><b>SEND</b></button>
+                    </form>
+                    
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="Our-Packages">
+            <div class="divider">
+                <h1>Our Packages</h1>
+            </div>
+        </section>
+        <section class="main-form">
+            <div class="element left">
+                <div class="konten">
+                    <div class="circle">
+                        <img src="asset/lightbulb-regular.svg" width="20" height="18">
+                    </div>
+
+                    <div class="isi-konten">
+                        <p><b>Fresh Vegetables</b></p>
+                        <p>Sayuran segar langsung dari<br>sumber pertanian terbaik</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="element center">
+                <div class="konten">
+                    <div class="circle">
+                        <img src="asset/lightbulb-regular.svg" width="20" height="18">
+                    </div>
+
+                    <div class="isi-konten">
+                        <p><b>Fresh Fruit</b></p>
+                        <p>Buah dengan kualitas terbaik<br>dari local atau import dan<br>harga yang menarik </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="element right">
+                <div class="konten">
+                    <div class="circle">
+                        <img src="asset/lightbulb-regular.svg" width="20" height="18">
+                    </div>
+
+                    <div class="isi-konten">
+                        <p><b>Instant delivery</b></p>
+                        <p>Di kirim instan oleh kurur<br>yang telah di training<br>dengan SOP untuk menjaga<br>kondisi belanja kamu</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-form">
+            <div class="element left">
+                <div class="konten">
+                    <div class="circle">
+                        <img src="asset/star-solid.svg" width="20" height="18">
+                    </div>
+
+                    <div class="isi-konten">
+                        <p><b>Kitchen Ingredient</b></p>
+                        <p>Bumbu dapur lengkap untuk<br>keperluan memasak kamu</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="element center">
+                <div class="konten">
+                    <div class="circle">
+                        <img src="asset/star-solid.svg" width="20" height="18">
+                    </div>
+
+                    <div class="isi-konten">
+                        <p><b>Kitchen Set</b></p>
+                        <p>Segala jenis alat masak untuk<br>membantu kamu memasak </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="element right">
+                <div class="konten">
+                    <div class="circle">
+                        <img src="asset/star-solid.svg" width="20" height="18">
+                    </div>
+
+                    <div class="isi-konten">
+                        <p><b>Bundling Set</b></p>
+                        <p>Bingung masak apa? sudah<br> tersedia paket untuk kamu<br>masak di dapur mu</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="Call-Us">
+            <div class="headline">
+                <h1>Your Closing Argument Headline</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <button class="btn-call"><b>CALL TO ACTION</b></button>
+            </div>
+        </section>
+
+        <section id="footer" class="footer">
+            <div class="logo-footer"><img src="/asset/logo-moqups.png" class="center">
+            <p>Terms of service   Privacy Policy</p>
+            <p>2019  Moqups</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("image");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); 
+        }
+        </script>
+
+</body>
+
+</html>

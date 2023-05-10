@@ -1,0 +1,320 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: 1em 2em;
+}
+
+.nav{
+    display: flex;
+   
+    padding: 2px 10px;
+    background-color: white;
+}
+
+.nav button{
+    background-color: white;
+    border: 1px solid gray;
+    cursor: pointer;
+    transition: 0.3s background-color ease-out;
+    padding: 10px 30px;
+    font-size: 14px;
+}
+
+.nav button:hover{
+    background-color: gainsboro;
+}
+
+
+
+section#home{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.banner{
+    padding-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(37, 36, 36);
+}
+
+.banner p{
+    color: rgb(156, 156, 156);
+}
+
+.banner h1{
+    font-size: 30px;
+}
+.main-form{
+    display: flex;
+}
+
+.element{
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+
+
+.form{
+    background: rgba(239, 239, 239, 0.911);
+    border-radius: 1 0%;
+    padding: 35px 90px 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form p{
+    color: rgb(158, 158, 158);
+}
+
+.input-field{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field label{
+    padding-bottom: 10px;
+}
+
+input#name{
+    padding: 10px;
+    border: 2px solid rgb(174, 174, 174);
+    border-radius: 7px;
+}
+
+input#email{
+    padding: 10px;
+    border: 2px solid rgb(174, 174, 174);
+    border-radius: 7px;
+}
+
+input#phone{
+    padding: 10px;
+    border: 2px solid rgb(174, 174, 174);
+    border-radius: 7px;
+}
+
+select#sayur{
+    padding: 10px;
+    border: 2px solid rgb(174, 174, 174);
+    border-radius: 7px;
+}
+
+textarea.form-control{
+    padding: 10px;
+    border: 2px solid rgb(174, 174, 174);
+    border-radius: 7px;
+}
+
+.btn{
+    margin-top: 20px;
+    padding: 14px 160px;
+    border-radius: 1 0%;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    color: white;
+    justify-content: center;
+}
+
+.btn:hover {
+    background: rgb(65, 65, 65);
+  }
+
+ a{
+    text-decoration: none;
+    color: black;
+ }
+
+ .image{
+    
+    border-radius: 5%;
+ }
+
+ .dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-top: 18px;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+
+
+
+ .review{
+    text-align: center;
+    color: gray;
+    margin-top: 25px;
+    margin-bottom: 25px;
+ }
+
+ .circle{
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    max-width: 1.8em;
+    text-align: center;
+    background: rgb(231, 230, 230);
+    padding: 0.7em;
+}
+
+.lingkaran{
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    max-width: 1.4em;
+    text-align: center;
+    background: rgb(231, 230, 230);
+    padding: 10px 15px;
+}
+
+ .konten{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .isi-konten{
+    margin-left: 25px;
+ }
+
+ .isi-konten p i{
+    color: gray;
+ }
+
+
+
+ .text{
+    margin-bottom: 45px;
+ }
+ .text p{
+    color: rgb(59, 59, 59);
+ }
+
+ .elementeks{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 18px;
+ }
+
+ .isi{
+    margin-left: 25px;
+    color: rgb(94, 94, 94);
+ }
+
+ .divider{
+    background: rgb(223, 223, 223);
+    text-align: center;
+    padding: 90px;
+    margin-left: -5px;
+ }
+
+ .headline{
+    justify-content: center;
+    text-align: center;
+    padding: 90px;
+    border-top: 1px solid rgb(198, 198, 198);
+ }
+
+ .headline p{
+    color: rgb(134, 134, 134);
+ }
+
+.btn-call{
+    margin-top: 20px;
+    padding: 1em;
+    border-radius: 1 0%;
+    background: rgb(59, 59, 59);
+    cursor: pointer;
+    color: white;
+}
+
+.btn-call b{
+    padding: 40px;
+
+}
+
+.logo-footer img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer{
+    padding: 30px;
+    border-top: 1px solid rgb(199, 199, 199);
+}
+
+.footer p{
+    text-align: center;
+    justify-content: center;
+    color: rgb(161, 161, 161);
+}
+
+@media only screen and (max-width: 600px) {
+    .header{
+        flex-direction: column;
+    }
+
+    .nav{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .logo{
+        margin-bottom: 14px;
+    }
+    
+    .main-form{
+        flex-direction: column;
+        
+    }
+    .element{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .btn{
+        width: 100%;
+        flex-direction: column;
+        padding: 10px 30px;
+    }
+
+    .btn:hover {
+        background: rgb(65, 65, 65);
+      }
+
+    .image{
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .btn-call b{
+        padding: 0px;
+    
+    }
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
