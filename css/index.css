@@ -9,6 +9,11 @@ body{
     padding: 1em 2em;
 }
 
+.header p{
+    font-size: 22px;
+    justify-content: center;
+    text-align: center;
+}
 .nav{
     display: flex;
    
@@ -21,7 +26,7 @@ body{
     border: 1px solid gray;
     cursor: pointer;
     transition: 0.3s background-color ease-out;
-    padding: 10px 30px;
+    padding: 10px 40px;
     font-size: 14px;
 }
 
@@ -274,6 +279,8 @@ textarea.form-control{
     text-align: center;
     justify-content: center;
 }
+
+
 
 @media only screen and (max-width: 600px) {
     .header{
